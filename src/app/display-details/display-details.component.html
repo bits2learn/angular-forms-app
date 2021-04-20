@@ -1,0 +1,6 @@
+<button class="btn btn-primary" (click)="onBtnClick()">Display Details</button>
+<p *ngIf="getDisplayContents()">display-details works!</p>
+
+<div *ngFor="let count of counter; let i = index" [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}" [ngClass]="{'white-css': i>=4}">Button clicked {{ count }}</div>
+
+<br/>
